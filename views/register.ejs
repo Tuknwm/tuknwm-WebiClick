@@ -1,0 +1,77 @@
+<%- include('partials/header')%>
+
+<div class="KotakUtamaReg">
+  <div class="KotakTeksReg">
+    <div class="KotakAnimReg">
+      <h1 class="TeksAnimReg active">Modern Clicking Counter</h1>
+      <h1 class="TeksAnimReg">Challenge Yourself</h1>
+      <h1 class="TeksAnimReg">look! who's coming 👀</h1>
+    </div>
+    <div class="KotakDesReg"></div>
+    <p class="deskripsi1Reg">Know your limit at clicking</p>
+    <p class="deskripsi2Reg">with saving point features</p>
+    <p class="deskripsi3Reg">
+      Generally, calculating mouse clicks is referred to as ‘click speed test’’.
+      Our website offers many variations by which a user can test his mouse
+      clicking ability. The click speed test is more like a pass time game where
+      players try to score the highest score.
+    </p>
+    <p class="deskripsi4Reg">
+      it's up to you how fast you can click, Now what are you waiting for?
+      Register right away to unlock your rank and compare your speed with other
+      players around the world!
+    </p>
+  </div>
+
+  <div class="KotakReg">
+    <h2>Register</h2>
+
+    <form action="/register" method="POST">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your username"
+        required
+      />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@gmail.com"
+        required
+      />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        required
+      />
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        placeholder="Enter your password Again"
+        required
+      />
+
+      <p class="PsnErrorReg">
+        <%= typeof errorMessage !== 'undefined' ? errorMessage : '' %>
+      </p>
+      <button type="submit" class="SubmitReg">Register</button>
+    </form>
+
+    <p class="LinkLogin">
+      Already have an account? <a href="/login">Login here</a>
+    </p>
+  </div>
+  <script src="/js/AnimTeks.js"></script>
+</div>

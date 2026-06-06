@@ -1,0 +1,33 @@
+<%- include('partials/header.ejs') %>
+
+<div class="KotakUtamaUsername">
+  <h2>Change Username</h2>
+  <form action="/ChangeUsername" method="POST">
+    <label for="New-username">New Username:</label>
+    <input
+      type="text_username"
+      id="New-username"
+      name="New-username"
+      placeholder="Enter your New Username"
+      required
+    />
+    <label for="password">Password:</label>
+    <input
+      type="password"
+      id="password_username"
+      name="password"
+      placeholder="Enter your Password"
+      required
+    />
+
+    <p class="PsnErrorLogUM">
+      <%= typeof errorMessage !== 'undefined' ? errorMessage : '' %>
+    </p>
+
+    <p class="PsnSuccessLogUM">
+      <%= typeof successMessage !== 'undefined' ? successMessage : '' %>
+    </p>
+    
+    <button class="tombolsaveUM" type="submit">Save!</button>
+  </form>
+</div>

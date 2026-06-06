@@ -1,0 +1,72 @@
+<%- include('partials/header.ejs') %>
+
+<div class="KotakUtamaProfile">
+  <p class="JudulProfile">Profile</p>
+<div class="KotakDisplayScore">
+  <div class="HSmode">
+    <button class="HSmodeButton active" data-mode="mouse">Mouse</button>
+    <button class="HSmodeButton" data-mode="keyboard">Keyboard</button>
+  </div>
+  
+  <div class="KotakGridScore">
+    <div class="HSDisplay">
+      <div class="ScoreLabel">5 Second</div>
+      <div class="ScoreUser" id="score-5s">-</div>
+    </div>
+    <div class="HSDisplay">
+      <div class="ScoreLabel">10 Second</div>
+      <div class="ScoreUser" id="score-10s">-</div>
+    </div>
+    <div class="HSDisplay">
+      <div class="ScoreLabel">15 Second</div>
+      <div class="ScoreUser" id="score-15s">-</div>
+    </div>
+  </div>
+</div>
+
+    <div class="KotakGridInfoProfile">
+      <div class="TeksKolom">
+        <p class="Username">UserName:</p>
+        <div class="IsiTeksKolom">
+          <div class="KotakProfileName"><%= user.username %></div>
+          <a href="/ChangeUsername" class="EditText">Edit</a>
+        </div>
+      </div>
+
+      <div class="TeksKolom">
+        <p class="password">Password:</p>
+        <div class="IsiTeksKolom">
+          <div class="KotakProfilePassword">********</div>
+          <a href="/ChangePassword" class="EditText">Edit</a>
+        </div>
+      </div>
+
+        <div class="ContBttnProfile">
+            <button class="DeleteAcc">
+              Delete Account
+            </button>
+
+          <button class="TombolLogout" onclick="location.href='/logout'">
+            Logout
+          </button>
+        </div>
+    </div>
+</div>
+
+<div class="BackGroundBlurDisplayDel">
+  <div class="KotakUtamaDisplayDel">
+    <p class="InfoConfirmDelete">Are You Sure To Delete This Account?</p>
+      <div class="ContBttnDeleteConfrim">
+          <button class="tmblAccept">
+            Yes
+          </button>
+          
+          <button class="tmblUnAccept">
+            No
+          </button>
+      </div>
+  </div>
+</div>
+
+<script src="/js/profile.js"></script>
+<script src="/js/DeleteProfile.js"></script>

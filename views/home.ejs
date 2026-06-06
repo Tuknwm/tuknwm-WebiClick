@@ -1,0 +1,91 @@
+<%- include('partials/header.ejs') %>
+
+<% if (locals.isLoggedIn) { %>
+  <body data-just-logged-in="true">
+<% } else { %>
+  <body>
+<% } %>
+
+<div class="RoundedBox">
+  <div class="ContainerBoxModeText">
+    <h1 class="clicking-counter">Clicking Counter</h1>
+    <div class="BoxTextContainer">
+      <div class="BoxTextGameMode">Set Game Mode:</div>
+      <div class="BoxTextGameTime">Set Game Time:</div>
+    </div>
+  </div>
+
+  <div class="ContainerBoxModeButton">
+    <div class="BoxModeGame">
+      <button id="ModeGameButton">Mouse (Klik)</button>
+    </div>
+
+    <div class="mode-selector">
+      <button id="modeButton">5 Seconds</button>
+    </div>
+  </div>
+
+  <div class="ContainerDisplayWKN">
+    <div class="BoxWaktu">
+      <p class="montserrat-Text">Time:</p>
+      <span class="time-value"></span>
+    </div>
+    <div class="BoxKecepatan">
+      <p class="montserrat-Text">Speed:</p>
+      <span class="speed-value"></span>
+    </div>
+    <div class="BoxNilai">
+      <p class="montserrat-Text">Score:</p>
+      <span class="score-value"></span>
+    </div>
+  </div>
+
+  <div class="ButtonPlay" id="startButton">
+    <p class="montserrat-Text">Klik disini untuk mulai 🔥</p>
+    <audio id="clickSound" src="sfx/klik2.mp3"></audio>
+  </div>
+</div>
+
+<div id="navbarContainer"></div>
+<div class="ContainerLuar hidden" id="resultContainer">
+  <div class="BoxResult">
+    <div class="ContainerDalamResult">
+      <div class="ContainerBoxKiri">
+        <div class="BoxSpeed">
+          <span class="label_S">CPS</span>
+          <span class="value_S" id="speedValue">0</span>
+          <span class="unit_S">click/s</span>
+        </div>
+
+        <div class="BoxTime">
+          <span class="label_T">Time</span>
+          <span class="value_T" id="timeValue">0</span>
+          <span class="unit_T">sec</span>
+        </div>
+
+        <div class="BoxScore">
+          <span class="label_Sc">Score</span>
+          <span class="value_Sc" id="scoreValue">0</span>
+          <span class="unit_Sc"></span>
+        </div>
+      </div>
+      <div class="ContainerBoxKanan">
+        <div id="modeText" class="BoxTextMode"></div>
+        <div class="peringkatContainer">
+          <img id="rankImage" class="hidden" src="" alt="Peringkat Gambar" />
+          <p id="rankText" class="hidden"></p>
+        </div>
+
+        <div class="BoxRestart" id="restartButton">Restart</div>
+        <% if (!locals.session || !locals.session.user) { %>
+          <p class="infoGuest">- Login To Save Your Score -</p>
+        <% } %>
+      </div>
+    </div>
+  </div>
+  <div class="BoxLeaderBoard">
+    <p>LeaderBoard</p>
+  </div>
+</div>
+
+<script src="/js/script.js"></script>

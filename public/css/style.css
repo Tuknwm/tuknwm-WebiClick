@@ -1,0 +1,2727 @@
+/* ------------------ CSS LandingPage.ejs ----------------- */
+/* -------------------------------------------------------- */
+/* ----------------- Yang bagian dalam Teks --------------- */
+
+.KotakTeksLP {
+  position: relative;
+  width: 80rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: -3rem;
+}
+
+.TeksAnimLP {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.TeksAnimLP.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+p {
+  font-size: 2rem;
+  transform: translateY(-4rem);
+}
+
+/* -------------------------- End ------------------------- */
+/* ------------ Yang bagian dalam KotakOpsiLogin ---------- */
+
+.KotakOpsiLogin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.KotakRegister,
+.KotakLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.RegisterButton,
+.LoginButton {
+  transform: translateY(-3rem);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  height: 3rem;
+  width: 15rem;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  background: #272727;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.KotakRegister button:hover,
+.KotakLogin button:hover {
+  background: #3f3f3f;
+}
+
+.TeksGuest {
+  transform: translateY(7rem);
+  font-size: 1rem;
+}
+
+.KotakGuest {
+  transform: translateY(7rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.GuestButton {
+  transform: translateY(-2rem);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  height: 3rem;
+  width: 15rem;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  background: #272727;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.GuestButton:hover {
+  background: #3f3f3f;
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* -------------------- CSS Register.ejs ------------------ */
+/* -------------------------------------------------------- */
+/* --------------------- KotakUtamaReg ---------------------*/
+
+.KotakUtamaReg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+
+/* ------------------- bagian dalam text -------------------*/
+.KotakTeksReg {
+  height: 35rem;
+  width: 50rem;
+  border-radius: 0.5rem;
+  transform: translateX(-6.5rem);
+  border: 0px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.KotakAnimReg {
+  position: relative;
+  transform: translateY(2rem);
+  max-width: 90%;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.TeksAnimReg {
+  position: absolute;
+  width: 100%;
+  max-width: 90%;
+  text-align: center;
+  font-size: 3rem !important;
+  font-weight: bold;
+  top: 1rem;
+  opacity: 0;
+  transform: translateY(80%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.TeksAnimReg.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.KotakDesReg {
+  position: relative;
+  max-width: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.deskripsi1Reg {
+  transform: translateY(1rem);
+  font-size: 2rem;
+}
+
+.deskripsi2Reg {
+  transform: translateY(-2.8rem);
+  font-size: 1.7rem;
+}
+
+.deskripsi3Reg {
+  max-width: 90%;
+  width: 100%;
+  transform: translateY(-3rem);
+  font-size: 20px;
+  text-align: justify;
+  font-style: italic;
+}
+
+.deskripsi4Reg {
+  max-width: 90%;
+  width: 100%;
+  transform: translateY(-2.8rem);
+  font-size: 20px;
+  text-align: justify;
+  font-style: italic;
+}
+
+/* -------------------------- End --------------------------*/
+/* ----------------- bagian dalam register -----------------*/
+
+.KotakReg {
+  background-color: rgba(27, 27, 27, 0.9);
+  height: 540px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  width: 350px;
+  margin-top: 3rem;
+  transform: translateY(-1rem);
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.KotakReg h2 {
+  margin-bottom: -5px;
+  transform: translateY(-2rem);
+  margin-top: 2.2rem;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="confirmPassword"] {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+.PsnErrorReg {
+  transform: translateY(-1rem);
+  color: red;
+  font-size: 1rem;
+}
+
+.SubmitReg {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding: 15px;
+  transform: translateY(-3rem);
+  background-color: #fff;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.SubmitReg:hover {
+  background-color: #ddd;
+}
+
+.LinkLogin {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 14px;
+}
+
+.LinkLogin a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.LinkLogin a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------------- End ------------------------- */
+/* ----------------- Tampilan Saat Mengecil --------------- */
+
+@media (max-width: 768px) {
+  .KotakUtamaReg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 45rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .KotakTeksReg {
+    height: 35rem;
+    width: 40rem;
+    border-radius: 0.5rem;
+    border: 0px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .KotakAnimReg {
+    height: 35rem;
+    width: 50rem;
+    border-radius: 0.5rem;
+    transform: translateX(-20rem) !important;
+    margin: -20.5rem;
+    border: 0px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .TeksAnimReg {
+    font-size: 0rem !important;
+  }
+
+  .TeksAnimReg.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .KotakDesReg {
+    position: relative;
+    max-width: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+  }
+
+  .deskripsi1Reg {
+    font-size: 0rem;
+  }
+
+  .deskripsi2Reg {
+    font-size: 0rem;
+  }
+
+  .deskripsi3Reg {
+    font-size: 0px;
+  }
+
+  .deskripsi4Reg {
+    font-size: 0px;
+  }
+
+  .KotakTeksReg {
+    order: 1;
+  }
+
+  .KotakAnimReg {
+    order: 2;
+  }
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* --------------------- CSS Login.ejs -------------------- */
+/* -------------------------------------------------------- */
+/* ------------------ Bagian Kotak Utama ------------------ */
+
+.KotakUtamaLog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+
+/* ------------------- bagian dalam text ------------------ */
+.KotakTeksLog {
+  height: 35rem;
+  width: 50rem;
+  border-radius: 0.5rem;
+  border: 0px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.KotakAnimLog {
+  transform: translateY(2rem);
+  position: relative;
+  max-width: 90%;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.TeksAnimLog {
+  position: absolute;
+  width: 100%;
+  max-width: 90%;
+  text-align: center;
+  font-size: 3rem !important;
+  font-weight: bold;
+  top: -2rem;
+  opacity: 0;
+  transform: translateY(80%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.TeksAnimLog.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.KotakDesLog {
+  position: relative;
+  max-width: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.deskripsi1Log {
+  transform: translateY(-1rem);
+  font-size: 2rem;
+}
+
+.deskripsi2Log {
+  transform: translateY(-4.8rem);
+  font-size: 1.7rem;
+}
+
+.deskripsi3Log {
+  max-width: 90%;
+  width: 100%;
+  transform: translateY(-5rem);
+  font-size: 20px;
+  text-align: justify;
+  font-style: italic;
+}
+
+.deskripsi4Log {
+  max-width: 90%;
+  width: 100%;
+  transform: translateY(-5rem);
+  font-size: 20px;
+  text-align: justify;
+  font-style: italic;
+}
+
+/* -------------------------- End ------------------------- */
+/* ------------------ bagian dalam login ------------------ */
+
+.KotakGridLog {
+  height: 35rem;
+  width: 40rem;
+  border-radius: 0.5rem;
+  transform: translateY(2.8rem);
+  margin-top: -2.5rem;
+  border: 0px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.KotakLoginLog {
+  background-color: rgba(27, 27, 27, 0.9);
+  height: 370px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  width: 350px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.KotakLogin h2 {
+  margin-bottom: -5px;
+  transform: translateY(-2rem);
+  margin-top: 2.5rem;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+.PsnErrorLog {
+  transform: translateY(-1rem);
+  color: red;
+  font-size: 1rem;
+}
+
+.PsnSuccessLog {
+  transform: translateY(-3rem);
+  color: rgb(0, 255, 98);
+  font-size: 1rem;
+}
+
+.SubmitLog {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding: 15px;
+  transform: translateY(-4.5rem);
+  background-color: #fff;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.SubmitLog:hover {
+  background-color: #ddd;
+}
+
+.LinkRegis {
+  margin-top: 0.5rem;
+  font-size: 14px;
+}
+
+.LinkRegis a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.LinkRegis a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------------- End ------------------------- */
+/* ----------------- Tampilan Saat Mengecil --------------- */
+
+@media (max-width: 768px) {
+  .KotakUtamaLog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .KotakGridLog {
+    height: 35rem;
+    width: 40rem;
+    border-radius: 0.5rem;
+    border: 0px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(15rem);
+  }
+
+  .KotakTeksLog {
+    height: 35rem;
+    width: 50rem;
+    border-radius: 0.5rem;
+    border: 0px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .TeksAnimLog {
+    font-size: 0rem !important;
+  }
+
+  .TeksAnimLog.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .KotakDesLog {
+    position: relative;
+    max-width: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+  }
+
+  .deskripsi1Log {
+    font-size: 0rem;
+  }
+
+  .deskripsi2Log {
+    font-size: 0rem;
+  }
+
+  .deskripsi3Log {
+    font-size: 0px;
+  }
+
+  .deskripsi4Log {
+    font-size: 0px;
+  }
+
+  .KotakGridLog {
+    order: 1;
+  }
+
+  .KotakTeksLog {
+    order: 2;
+  }
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* -------------------- CSS Leaderboard.ejs --------------- */
+/* -------------------------------------------------------- */
+/* ------------------- KotakUtamaLeaderboard -------------- */
+.KotakUtamaLeaderboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  max-width: 80rem;
+}
+
+/* ----------------- Kotak untuk opsi mode ---------------- */
+
+.KotakGridLeaderboard {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  gap: 2rem;
+}
+
+.KotakOpsiLeaderboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 12rem;
+}
+
+.KotakModeTime{
+  display: flex;
+  flex-direction: column;
+  height: 17rem;
+  gap: 1rem;
+  background-color: rgba(27, 27, 27, 0.8);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.KotakModeGame {
+  display: flex;
+  flex-direction: column;
+  height: 13.8rem;
+  gap: 1rem;
+  background-color: rgba(27, 27, 27, 0.8);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.KotakModeTime h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: -1rem;
+}
+
+.KotakModeGame h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: -1rem;
+}
+
+.tmblModeT {
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  margin-bottom: -2rem;
+  border-radius: 0.25rem;
+  background-color: rgba(50, 50, 50, 0.8);
+  font-size: 1rem;
+}
+
+.tmblModeG {
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white;
+  border: none;
+  margin-bottom: -2rem;
+  border-radius: 0.25rem;
+  background-color: rgba(50, 50, 50, 0.8);
+  font-size: 1rem;
+}
+
+.tmblModeT:hover, .tmblModeG:hover {
+  background-color: rgba(70, 70, 70, 0.9);
+}
+
+.tmblModeT.active, .tmblModeG.active {
+  background-color: #7c7c7c;
+  font-weight: bold;
+}
+
+/* -------------------------- End ------------------------- */
+/* --------------- Kotak untuk display score -------------- */
+
+.BoxLeaderBoard {
+  height: 35rem;
+  width: 35rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(27, 27, 27, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.BoxLeaderBoard p {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transform: translateY(0.1em);
+  margin-bottom: 1.5rem;
+}
+
+.dislpayLeaderboard {
+  display: none;
+  width: 100%;
+}
+
+.dislpayLeaderboard.active {
+  display: block;
+}
+
+.tabelLeaderboard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tabeljudulLeaderboard,
+.tabelisiLeaderboard {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.tabeljudulLeaderboard {
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 5px;
+  transform: translateY(0.5rem);
+}
+
+.tabelisiLeaderboard {
+  border-bottom: 1px solid rgba(245, 245, 245, 0.2);
+}
+
+.j_norank,
+.i_norank {
+  flex: 0 0 15%;
+  text-align: center;
+}
+
+.j_nameplayer,
+.i_nameplayer {
+  flex: 1;
+  text-align: left;
+}
+
+.j_scoreplayer,
+.i_scoreplayer {
+  flex: 0 0 25%;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 1.5rem;
+}
+
+.leaderboard-loading,
+.leaderboard-error {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  padding: 10px 0;
+}
+
+.leaderboard-error {
+  color: #e74c3c;
+}
+
+.infoLeaderboard {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  padding: 15px 0;
+}
+
+/* Bagian ini hanya sebagai hiasan */
+/* Untuk memberikan warna sesuai rank player dengan gold silver bronze */
+
+.tabelisiLeaderboard:nth-child(2) .i_norank {
+  color: gold;
+  font-weight: bold;
+}
+
+.tabelisiLeaderboard:nth-child(3) .i_norank {
+  color: silver;
+  font-weight: bold;
+}
+
+.tabelisiLeaderboard:nth-child(4) .i_norank {
+  color: #cd7f32;
+  font-weight: bold;
+}
+
+/* -------------------------- End ------------------------- */
+/* ----------------- Tampilan InfoRankUser ---------------- */
+
+.InfoRankUser {
+  width: 35rem;
+  height: 2.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  background-color: rgba(27, 27, 27, 0.9);
+  border-radius: 0.5rem;
+  position: absolute;
+  transform: translateY(6rem);
+  gap: 10rem;
+  bottom: 8rem;
+}
+
+.userRankContainer {
+  margin-top: -0.5rem;
+}
+
+.asam {
+  color: rgba(212, 30, 30, 0);
+}
+
+.d_norank {
+  flex: 0 0 15%;
+  text-align: center;
+
+}
+
+.d_nameplayer {
+  flex: 1;
+  text-align: left;
+}
+
+.d_scoreplayer {
+  flex: 0 0 25%;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 1.5rem;
+}
+
+.BackGroundBlurDisplayDelScore{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.KotakUtamaDisplayDelScore {
+  height: 15rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(27, 27, 27, 0.9);
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 37.5%;
+  transform: translate(-50%, -50%);
+}
+
+.InfoConfirmDeleteScore {
+ font-size: 1rem;
+ margin-top: 7.5rem;
+}
+
+.ContBttnDeleteConfrimScore {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  transform: translateY(-3rem);
+  justify-content: center;
+}
+
+.tmblAcceptS {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 0, 0);
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tmblAcceptS:hover {
+  background: #a23e3e;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(158, 0, 0);
+}
+
+.tmblUnAcceptS {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tmblUnAcceptS:hover {
+  background: #6f6f6f;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.DelSco {
+  font-size: 1rem;
+  transform: translateY(-1.2rem);
+}
+
+.deleteScore {
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  width: 10rem;
+  height: 3rem;
+  background-color: rgba(40, 40, 40, 0.8);
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 0, 0);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.deleteScore:hover {
+  background: #a23e3e;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(158, 0, 0);
+  transform: scale(1.05);
+}
+
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOutScale {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.KotakUtamaDisplayDelScore {
+  animation: fadeInScale 0.3s ease forwards;
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------------- End ------------------------- */
+/* -------------------------------------------------------- */
+
+/* ------------------ Tampilan saat kecil ----------------- */
+@media (max-width: 900px) {
+
+  body {
+    overflow-y: auto;
+    margin-top: 17rem;
+  }
+  .KotakGridLeaderboard {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .KotakOpsiLeaderboard {
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 2rem;
+  }
+  
+  .tmblModeT, .tmblModeG {
+      width: 100%;
+      
+  }
+  
+  .BoxLeaderBoard {
+      width: 100%;
+      height: auto;
+      min-height: 30rem;
+      max-width: 90%;
+  }
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* --------------------- CSS About.ejs -------------------- */
+/* -------------------------------------------------------- */
+/* -------------------- KotakUtamaAbout ------------------- */
+
+.KotakUtamaAbout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50rem;
+  gap: 5rem;
+}
+
+/* ---------------- Bagian dalam text about ---------------- */
+
+.KotakGridTeksAbout {
+  border-radius: 0.5rem;
+  color: white;
+  transform: none;
+  transform: translateY(3rem);
+}
+
+.KotakGridTeksAbout h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  color: yellow;
+}
+
+.KotakGridTeksAbout p {
+  font-size: 1.6rem;
+  margin-top: 5rem;
+  text-align: justify;
+}
+
+/* -------------------------- End ------------------------- */
+/* ------------------ Bagian GambarAbout ------------------ */
+
+.KotakGridGambarAbout {
+  border-radius: 0.5rem;
+  color: white;
+  transform: none;
+}
+
+.KotakGambar {
+  width: 40rem;
+  height: 25rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  position: relative;
+}
+
+.KotakGambar .GambarAbout {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.KotakGambar:hover .GambarAbout {
+  filter: blur(1px);
+  opacity: 0.7;
+}
+
+.KotakGambar::after {
+  content: "Visit Github";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.KotakGambar:hover::after {
+  opacity: 1;
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------------- End ------------------------- */
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* ----------------- CSS ChangeUsername.ejs --------------- */
+/* -------------------------------------------------------- */
+/* ------------------- KotakUtamaUsername ----------------- */
+
+.KotakUtamaUsername {
+  background-color: rgba(27, 27, 27, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  width: 350px;
+  height: 23.5rem;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #333;
+}
+
+.KotakUtamaUsername h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input[type="text_username"],
+input[type="password_username"] {
+  width: 20.5rem;
+  padding: 12px 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+/* ------------------------- */
+/* Jan diubah */
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 2rem;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+/* ------------------------- */
+/* asli yang ini */
+.tombolsaveUM {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: -3rem;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: 0.3s ease;
+}
+
+.tombolsaveUM button:hover {
+  background-color: #ddd;
+}
+/* ------------------------- */
+
+.PsnErrorLogUM {
+  transform: translateY(-1.2rem);
+  color: red;
+  font-size: 1rem;
+}
+
+.PsnSuccessLogUM {
+  transform: translateY(-1.5rem);
+  color: rgb(0, 255, 42);
+  font-size: 1rem;
+}
+
+
+/* -------------------------- End ------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* -------------------- CSS profile.ejs ------------------- */
+/* -------------------------------------------------------- */
+/* ------------------- KotakUtamaProfile ------------------ */
+
+.KotakUtamaProfile {
+  height: 39rem;
+  width: 35rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(27, 27, 27, 0.9);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 3rem;
+  overflow: hidden;
+}
+
+.JudulProfile {
+  font-size: 32px;
+  margin-top: 7.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+/* ------------- Bagian KotakDisplayScore -------------- */
+.KotakDisplayScore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.HSmode {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin-top: -7rem;
+  justify-content: center;
+}
+
+.HSmodeButton {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgba(50, 50, 50, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: bold;
+}
+
+.HSmodeButton:hover {
+  background-color: rgba(70, 70, 70, 0.9);
+}
+
+.HSmodeButton.active {
+  background-color: #7c7c7c;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.KotakGridScore {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.HSDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  height: 4rem;
+  padding: 1rem;
+  background-color: rgba(40, 40, 40, 0.8);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ScoreLabel {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.ScoreUser {
+  font-size: 1.8rem;
+  color: gold;
+  font-weight: bold;
+}
+
+/* ------------- Bagian KotakGridInfoProfile -------------- */
+
+.KotakGridInfoProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  margin-top: -3rem;
+}
+
+.TeksKolom {
+  display: flex;
+  flex-direction: column;
+}
+
+.IsiTeksKolom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emaill {
+  color: white;
+  transform: translateY(-7rem);
+  transform: translateX(-13.8rem);
+  font-size: 1rem;
+}
+
+.Username {
+  color: white;
+  transform: translateY(7rem);
+  transform: translateX(-12rem);
+  font-size: 1rem;
+}
+
+.password {
+  color: white;
+  transform: translateY(7rem);
+  transform: translateX(-12.3rem);
+  font-size: 1rem;
+}
+
+.KotakProfileName,
+.KotakProfilePassword {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  width: 30.2rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.EditText {
+  font-size: 0.9rem;
+  color: rgb(255, 165, 0);
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: -3rem;
+}
+
+.EditText:hover {
+  color: rgb(254, 255, 179);
+}
+
+/* -------------------------- End ------------------------- */
+/* ------------- Bagian tombol bawah profile -------------- */
+
+.BackGroundBlurDisplayDel{
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.KotakUtamaDisplayDel {
+  height: 15rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(27, 27, 27, 0.9);
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.InfoConfirmDelete {
+ font-size: 1rem;
+ margin-top: 7.5rem;
+}
+
+.ContBttnDeleteConfrim {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  transform: translateY(-3rem);
+  justify-content: center;
+}
+
+.tmblAccept {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 0, 0);
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tmblAccept:hover {
+  background: #a23e3e;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(158, 0, 0);
+}
+
+.tmblUnAccept {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tmblUnAccept:hover {
+  background: #6f6f6f;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOutScale {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.KotakUtamaDisplayDel {
+  animation: fadeInScale 0.3s ease forwards;
+}
+
+.ContBttnProfile {
+  display: flex;
+  gap: 16rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.TombolLogout {
+  width: 8rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.TombolLogout:hover {
+  background: #3f3f3f;
+  color: rgb(255, 0, 0);
+  border: 2px solid rgb(158, 0, 0);
+}
+
+.DeleteAcc {
+  width: 8rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  border: 2px solid rgba(255, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 0, 0);
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.DeleteAcc:hover {
+  background: #3f3f3f;
+  color: rgb(255, 0, 0);
+  border: 2px solid rgb(158, 0, 0);
+}
+
+
+/* -------------------------- End ------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* ------------------ CSS ChangePassword.ejs -------------- */
+/* -------------------------------------------------------- */
+/* -------------------- KotakUtamaPassword ---------------- */
+
+.KotakUtamaPassword {
+  background-color: rgba(27, 27, 27, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  width: 350px;
+  height: 27rem;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.KotakUtamaPassword h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.LabelCurrentPassword {
+  margin-bottom: 5px;
+  font-size: 14px;
+  transform: translateX(-0.7rem);
+}
+
+.LabelNewPassword {
+  margin-bottom: 5px;
+  font-size: 14px;
+  transform: translateX(-0.7rem);
+}
+
+.LabelConfirmPassword {
+  margin-bottom: 5px;
+  font-size: 14px;
+  transform: translateX(-0.7rem);
+}
+
+input[type="current_password"],
+input[type="new_password"],
+input[type="confirm_password"] {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  transform: translateX(-0.7rem);
+  border: 1px solid #333;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+.TombolPassword {
+  width: 23.2rem;
+  margin-top: -3.5rem;
+  font-size: 20px;
+  border-radius: 8px;
+  transform: translateX(-0.7rem);
+  position: relative;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.TombolPassword:hover {
+  background-color: #ddd;
+}
+
+.PsnErrorLogPW {
+  transform: translateY(-1.5rem);
+  margin-left: -0.5rem;
+  color: red;
+  font-size: 1rem;
+}
+
+.PsnSuccessLogPW {
+  transform: translateY(-1.5rem);
+  color: rgb(0, 255, 42);
+  font-size: 1rem;
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* -------------------- CSS Friend.ejs -------------------- */
+/* -------------------------------------------------------- */
+/* ------------------- KotakUtamaFriend ------------------- */
+
+.KotakUtamaFriend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  max-width: 80rem;
+}
+
+.KotakGridFriend {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  gap: 2rem;
+}
+
+.JudulFriends {
+  margin-top: 1.5rem;
+  transform: translateX(1rem);
+}
+
+/* ------------------- KotakDisplayPlayer ------------------- */
+
+.KotakDisplayPlayer {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 36rem;
+  gap: 1rem;
+  background-color: rgba(27, 27, 27, 0.8);
+  padding: 1.5rem;
+  transform: translateX(0rem);
+  border-radius: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.KotakDisplayInfoChat {
+  height: 35rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(27, 27, 27, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.KotakUtamaDisplayReq {
+  height: 7rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(27, 27, 27, 0.9);
+  text-align: center;
+  position: absolute;
+  margin-top: 33rem;
+  margin-left: 10rem;
+  transform: translate(-50%, -50%);
+}
+
+.InfoConfirmReq {
+  font-size: 1rem;
+  margin-top: 5rem;
+}
+
+.ContBttnConfirmReq {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  transform: translateY(-3rem);
+  justify-content: center;
+}
+
+.tmblAcceptReq {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin-top: -1rem;
+  border: 2px solid rgba(0, 255, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 255, 0);
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.tmblAcceptReq:hover {
+  background: #43a23e;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 158, 0);
+}
+
+.tmblUnAcceptReq {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin-top: -1rem;
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 0, 0);
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.tmblUnAcceptReq:hover {
+  background: #a23e3e;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(158, 0, 0);
+}
+
+.KotakDisplayInfoChat.hidden {
+  display: none;
+}
+
+/* ------------- animasi untuk KotakDisplayInfoChat dan KotakDisplayPlayer -------------- */
+.KotakDisplayInfoChat.grow-in {
+  animation: growIn 0.5s forwards;
+}
+
+.KotakDisplayInfoChat.grow-out {
+  animation: growOut 0.5s forwards;
+}
+
+.KotakDisplayPlayer.slide-left {
+  animation: slideLeft 0.5s forwards;
+}
+
+.KotakDisplayPlayer.slide-right {
+  animation: slideRight 0.5s forwards;
+}
+
+@keyframes growIn {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes growOut {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(0); opacity: 0; }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(20rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0rem);
+  }
+  100% {
+    transform: translateX(20rem);
+  }
+}
+
+/* ------------------------------ End ------------------------------- */
+
+.DisOpsiPlayer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-left: 10rem;
+  margin-top: 1rem;
+  height: 45px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(27, 27, 27, 0.9);
+  font-size: 12px;
+}
+
+.SearchBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 18rem;
+  height: 3rem;
+  top: 0.25rem;
+  transform: translateX(0.5rem);
+  border-radius: 30px;
+  padding: 0 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(27, 27, 27, 0.9);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.SearchBar input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 25rem;
+  height: 3rem;
+  top: 0.65rem;
+  transform: translateX(-0.55rem);
+  border-radius: 30px;
+  padding: 0 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0);
+  background-color: transparent;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0);
+}
+
+
+.SearchPlayerBttn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30px;
+  background-color: rgba(168, 104, 104, 0);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  top: -1rem;
+  left: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.SearchPlayerBttn:hover {
+  background: #3f3f3f;
+}
+
+.ToggleCap {
+  flex: 1;
+  text-align: center;
+  line-height: 45px;
+  z-index: 1;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.ToggleSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #7c7c7c;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.UsersList {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.UserItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0.75rem 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(27, 27, 27, 0.9);
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.UserInfo {
+  flex: 1;
+}
+
+.Username {
+  font-weight: 500;
+  color: white;
+}
+
+.UserActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.UserActions button {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(40, 40, 40, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transform: translateX(12.5rem);
+  transition: background-color 0.2s ease;
+}
+
+.UserActions button:hover {
+  background-color: rgba(60, 60, 60, 0.9);
+  transform: scale(1.1);
+  transform: translateX(12.5rem);
+}
+
+.ForChatIcon button {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(40, 40, 40, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin-top: -2rem;
+  transform: translateX(10rem) translateY(4rem);
+  transition: background-color 0.2s ease;
+}
+
+.ForChatIcon button:hover {
+  background-color: rgba(60, 60, 60, 0.9);
+  transform: scale(1.1);
+  transform: translateX(10rem) translateY(4rem);
+}
+
+/* -------------------------- End ------------------------- */
+/* ------------------ KotakDisplayInfoChat ---------------- */
+
+.EmptyState {
+  text-align: center;
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+
+.ErrorMessage {
+  text-align: center;
+  padding: 1rem;
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+.InfoPlayer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 1.5rem;
+  margin-top: -2.5rem;
+}
+
+.BackBttnInfo {
+  width: 4rem;
+  height: 2rem;
+  background-color: rgba(40, 40, 40, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.BackBttnInfo:hover {
+  background-color: rgba(60, 60, 60, 0.9);
+  transform: scale(1.1);
+}
+
+.UserInfoName {
+  font-size: 1.5rem;
+  font-weight: 500;
+  flex: 1;
+  margin-top: 2rem;
+  transform: translateX(2rem);
+}
+
+.UserInfoData, .DisplayChat {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.UserInfoData.hidden, .DisplayChat.hidden {
+  display: none;
+}
+
+.KotakGridScoreInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  margin-top: -1rem;
+}
+
+.HSDisplayInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem;
+  margin-top: 1.3rem;
+  border-radius: 0.5rem;
+}
+
+.HSmodeButtonInfo {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgba(50, 50, 50, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  cursor: default;
+}
+
+.HSmodeButtonInfo:hover {
+  background-color: rgba(50, 50, 50, 0.8);
+}
+
+.ActionButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.FollowButton, .ChatButton {
+  border-radius: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  padding: 0.75rem 2rem;
+
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.FollowButton:hover, .ChatButton:hover {
+  background: #3f3f3f;
+}
+
+/* -------------------------- End ------------------------- */
+ /* --------------------- Kotak Alias --------------------- */
+ .EditIcon {
+  cursor: pointer;
+}
+
+.EditAliasPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.EditAliasPopup.hidden {
+    display: none;
+}
+
+.EditAliasContent {
+    background: rgba(27, 27, 27, 0.9);
+    padding: 20px;
+    border-radius: 0.5rem;
+    width: 30rem;
+    height: 20rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    animation: fadeInScale 0.3s ease forwards;
+    color: white;
+}
+
+.EditAliasButtons {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.EditAliasButtons button {
+    width: 12rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0);
+}
+
+#saveAliasBtn {
+    color: rgb(0, 255, 0);
+    border: 2px solid rgba(0, 255, 0, 0.5);
+    transform: translateY(-1rem);
+}
+
+#saveAliasBtn:hover {
+    background: #3ea23e;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 158, 0);
+}
+
+#cancelAliasBtn {
+    color: rgb(255, 0, 0);
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    transform: translateY(-1rem);
+}
+
+#cancelAliasBtn:hover {
+    background: #a23e3e;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(158, 0, 0);
+}
+
+#removeAliasBtn {
+    color: white;
+    transform: translateY(-1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#removeAliasBtn:hover {
+    background: #6f6f6f;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#aliasInput {
+    width: 80%;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(50, 50, 50, 0.5);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 1rem;
+}
+
+#originalUsername {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.AliasText {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 3rem;
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------- KotakDisplayChat ------------------ */
+
+.ChatMessages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-right: 0.5rem;
+}
+
+.ChatMessage {
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  max-width: 80%;
+  word-break: break-word;
+}
+
+.ChatMessage.sent {
+  align-self: flex-end;
+  background-color: #3498db;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.ChatMessage.received {
+  align-self: flex-start;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom-left-radius: 0.25rem;
+}
+
+.EmptyChat {
+  text-align: center;
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+
+.ChatInput {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  margin-top: auto;
+  height: 2.5rem;
+}
+
+.ChatInput input {
+  flex: 1;
+  height: 2.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.ChatInput input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.ChatInput button {
+  height: 2.5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transform: translateY(-2rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: normal;
+  transition: background-color 0.2s ease;
+}
+
+.ChatInput button:hover {
+  background-color: #2980b9;
+}
+
+.DeleteChatButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  width: 20%;
+  cursor: pointer;
+}
+
+.DeleteChatButton:hover {
+  background-color: #d32f2f;
+}
+
+.BackGroundBlurDisplayDeleteChat{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.KotakUtamaDisplayDelChat {
+  height: 15rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(27, 27, 27, 0.9);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.InfoConfirmDeleteChat {
+ font-size: 1rem;
+ margin-top: 7.5rem;
+}
+
+.ContBttnDeleteConfrimChat {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  transform: translateY(-3rem);
+  justify-content: center;
+}
+
+.tmblAcceptC {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 0, 0);
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tmblAcceptC:hover {
+  background: #a23e3e;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(158, 0, 0);
+}
+
+.tmblUnAcceptC {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tmblUnAcceptC:hover {
+  background: #6f6f6f;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+/* --------------- desain scrollbar ------------ */
+.UsersList::-webkit-scrollbar,
+.DisplayChat::-webkit-scrollbar {
+  width: 6px;
+}
+
+.UsersList::-webkit-scrollbar-track,
+.DisplayChat::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+
+.UsersList::-webkit-scrollbar-thumb,
+.DisplayChat::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.UsersList::-webkit-scrollbar-thumb:hover,
+.DisplayChat::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------- tampilan mengecil ----------------- */
+
+@media (max-width: 768px) {
+  .KotakGridFriend {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .KotakDisplayPlayer, .KotakDisplayInfoChat {
+    width: 100%;
+  }
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------------- End ------------------------- */
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* --------------------- CSS Global.ejs ------------------- */
+/* -------------------------------------------------------- */
+/* ------------------- KotakUtamaGlobal ------------------- */
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.message-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  margin-bottom: 5rem;
+}
+
+.KotakUtamaGlobal {
+  height: 35rem;
+  width: 28rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(27, 27, 27, 0.9);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ------------------- isi dalam chat  ------------------- */
+.JudulTextGlobal {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transform: translateY(1rem);
+}
+
+.TextGlobalIchat {
+  font-size: 1.2rem;
+}
+
+.KotakMessageGlobal {
+  max-height: 2.5rem;
+  max-width: 26rem;
+  padding: 1rem;
+  position: fixed;
+  transform: translateY(27.5rem) translateX(0.1rem);
+  background-color: rgba(87, 87, 87, 0.1);
+  align-content: center;
+}
+
+.message {
+  font-size: 1rem;
+  transform: translateY(-0.8rem) translateX(0rem);
+}
+
+.message-left,
+.message-right {
+  list-style: none;
+  padding: 8px 12px;
+  margin: 12px;
+  max-height: 3rem;
+  max-width: 10rem;
+  word-wrap: break-word;
+}
+
+.message-left {
+  border-radius: 20px 20px 20px 0px;
+  align-self: flex-start;
+  background-color: #2d2d2d;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+.message-right {
+  border-radius: 20px 20px 0px 20px;
+  transform: translateX(0.5rem);
+  align-self: flex-end;
+  background-color: #4d4d4d;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  color: #f6f6f6;
+  text-align: right;
+}
+
+.message-left > p > span,
+.message-right > p > span {
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.InputChatGlobal {
+  flex: 1;
+  height: 2.5rem;
+  background: rgb(255, 12, 12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50rem !important;
+  transform: translateX(0.5rem);
+  max-width: 20rem;
+  color: rgb(255, 20, 20);
+  font-size: 1rem;
+}
+
+.send-button {
+  max-width: 2.5rem;
+  border-radius: 50rem;
+  height: 2.5rem;
+  transform: translateX(22.5rem) translateY(-5.7rem);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------------- End ------------------------- */
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* --------------------- CSS AnimateBg -------------------- */
+/* -------------------------------------------------------- */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient {
+  --size: 750px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(hsl(0, 0%, 100%), hsl(46, 49%, 74%));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 500px;
+  }
+}
+
+body {
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------------------------------------------- */

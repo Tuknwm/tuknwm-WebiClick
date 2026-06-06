@@ -1,0 +1,305 @@
+/* -------------------------------------------------------- */
+/* ----------------- CSS Home.ejs | Result  --------------- */
+/* -------------------------------------------------------- */
+/* ------------------ Bagian Kotak Utama ------------------ */
+
+.ContainerLuar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* ----------------- Bagian dalam box result ------------- */
+
+.BoxResult {
+  height: 35rem;
+  width: 35rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.ContainerDalamResult {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* ------------------------ T,S,C ------------------------- */
+
+.ContainerBoxKiri {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.BoxTime,
+.BoxSpeed,
+.BoxScore {
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.label_S {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.value_S {
+  font-size: 4rem;
+  font-weight: bold;
+  color: gold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.unit_S {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.label_T {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.value_T {
+  font-size: 4rem;
+  font-weight: bold;
+  color: gold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.unit_T {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.label_Sc {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.value_Sc {
+  font-size: 4rem;
+  font-weight: bold;
+  color: gold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.unit_Sc {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* -------------------------- End ------------------------- */
+
+.ContainerBoxKanan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.BoxTextMode {
+  height: 3rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 0.5rem;
+  transform: translateY(-60px);
+}
+
+.peringkatContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto 2rem;
+  transform: translateY(5px);
+}
+
+#rankImage {
+  transform: translateY(-60px);
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+#rankText {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.BoxRestart {
+  height: 3.75rem;
+  width: 10.625rem;
+  border-radius: 3.75rem;
+  background-color: #272727;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50px);
+  margin-bottom: -8rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.BoxRestart:hover {
+  background-color: #3f3f3f;
+}
+
+.infoGuest {
+  font-size: 1rem;
+  color: rgb(206, 206, 206);
+  transform: translateY(6rem);
+}
+
+/* -------------------------- End ------------------------- */
+/* -------------------------- End ------------------------- */
+/* -------------------------- End ------------------------- */
+/* -------------------------------------------------------- */
+/* --------------- Bagian dalma leaderboard --------------- */
+
+.BoxLeaderBoard {
+  height: 35rem;
+  width: 35rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(27, 27, 27, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+
+.BoxLeaderBoard p {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transform: translateY(0.1em);
+}
+
+
+.leaderboard-loading,
+.leaderboard-error {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    padding: 10px 0;
+}
+
+.leaderboard-error {
+    color: #e74c3c;
+}
+
+.leaderboard-table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.leaderboard-header,
+.leaderboard-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.leaderboard-header {
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 5px;
+    transform: translateY(0.5rem);
+}
+
+.leaderboard-row {
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.rank-header,
+.rank-cell {
+    flex: 0 0 15%;
+    text-align: center;
+}
+
+.player-header,
+.player-cell {
+    flex: 1;
+    text-align: left;
+}
+
+.score-header,
+.score-cell {
+    flex: 0 0 25%;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 1.5rem;
+}
+
+.leaderboard-empty {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    padding: 15px 0;
+}
+
+.leaderboard-row:nth-child(2) .rank-cell {
+    color: gold;
+    font-weight: bold;
+}
+
+.leaderboard-row:nth-child(3) .rank-cell {
+    color: silver;
+    font-weight: bold;
+}
+
+.leaderboard-row:nth-child(4) .rank-cell {
+    color: #cd7f32;
+    font-weight: bold;
+}
+
+/* -------------------------- End ------------------------- */

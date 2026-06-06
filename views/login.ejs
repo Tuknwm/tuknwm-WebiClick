@@ -1,0 +1,68 @@
+<%- include('partials/header')%>
+
+<div class="KotakUtamaLog">
+  <div class="KotakTeksLog">
+    <div class="KotakAnimLog">
+      <h1 class="TeksAnimLog active">Hi! Welcome to iClick :D</h1>
+      <h1 class="TeksAnimLog">Do You Ready</h1>
+      <h1 class="TeksAnimLog">To Beat Your Score 🔥</h1>
+      <h1 class="TeksAnimLog">Modern Clicking Counter</h1>
+      <h1 class="TeksAnimLog">Challenge Yourself</h1>
+    </div>
+    <div class="KotakDesLog"></div>
+    <p class="deskripsi1Log">Know your limit at clicking</p>
+    <p class="deskripsi2Log">with saving point features</p>
+    <p class="deskripsi3Log">
+      Generally, calculating mouse clicks is referred to as ‘click speed test’’.
+      Our website offers many variations by which a user can test his mouse
+      clicking ability. The click speed test is more like a pass time game where
+      players try to score the highest score.
+    </p>
+    <p class="deskripsi4Log">
+      it's up to you how fast you can click, Now what are you waiting for?
+      Register right away to unlock your rank and compare your speed with other
+      players around the world!
+    </p>
+  </div>
+
+  <div class="KotakGridLog">
+    <div class="KotakLoginLog">
+      <h2>Login</h2>
+      <form action="/login" method="POST">
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+          required
+        />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        />
+
+        <p class="PsnErrorLog">
+          <%= typeof errorMessage !== 'undefined' ? errorMessage : '' %>
+        </p>
+
+        <p class="PsnSuccessLog">
+          <%= typeof successMessage !== 'undefined' ? successMessage : '' %>
+        </p>
+
+        <button type="submit" class="SubmitLog">Login</button>
+      </form>
+
+      <p class="LinkRegis">
+        Dont have an account? <a href="/register">Register here</a>
+      </p>
+    </div>
+
+    <script src="/js/AnimTeks.js"></script>
+  </div>
+</div>

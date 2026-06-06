@@ -1,0 +1,119 @@
+<%- include('partials/header')%>
+<meta name="user-id" content="<%= session.user._id %>">
+
+<div class="KotakUtamaFriend">
+    <div class="KotakGridFriend">
+        <div class="KotakDisplayPlayer" id="infoUsers">
+            <h2 class="JudulFriends">Friends</h2>
+            <div class="DisOpsiPlayer">
+                <div class="ToggleSlide"></div>
+                <div class="ToggleCap active" id="friendToggle">Friend</div>
+                <div class="ToggleCap" id="searchToggle">Find</div>
+            </div>
+
+            <div class="SearchBar">
+                <input type="text" id="searchInput" placeholder="Search Username">
+                <button class="SearchPlayerBttn">🔍</button>
+            </div>
+            
+            <div class="UsersList" id="usersList"></div>
+
+            <div class="KotakUtamaDisplayReq">
+                <p class="InfoConfirmReq">This user wants to add you</p>
+                <div class="ContBttnConfirmReq">
+                    <button class="tmblAcceptReq">
+                        Accept
+                    </button>
+                    
+                    <button class="tmblUnAcceptReq">
+                        No
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="EditAliasPopup hidden" id="editAliasPopup">
+            <div class="EditAliasContent">
+                <h3 class="AliasText">Add alias to this username</h3>
+                <p id="originalUsername"></p>
+                <input type="text" id="aliasInput" placeholder="Enter alias name">
+                <div class="EditAliasButtons">
+                    <button id="saveAliasBtn">Save</button>
+                    <button id="removeAliasBtn">Remove Alias</button>
+                    <button id="cancelAliasBtn">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="KotakDisplayInfoChat" id="infoPanel">
+            <div class="InfoPlayer">
+                <button class="BackBttnInfo" id="backButtonInfo">←</button>
+                <div class="UserInfoName" id="userInfoName">User Info</div>
+                <button class="DeleteChatButton" id="deleteChatButton" style="display: none;">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+            
+            <div class="UserInfoData" id="userInfoData">
+                <button class="HSmodeButtonInfo">Mouse</button>
+
+                <div class="KotakGridScoreInfo">
+                    <div class="HSDisplayInfo">
+                        <div class="ScoreLabel">5 Second</div>
+                        <div class="ScoreUser" id="score-mouse-5s">-</div>
+                    </div>
+                    <div class="HSDisplayInfo">
+                        <div class="ScoreLabel">10 Second</div>
+                        <div class="ScoreUser" id="score-mouse-10s">-</div>
+                    </div>
+                    <div class="HSDisplayInfo">
+                        <div class="ScoreLabel">15 Second</div>
+                        <div class="ScoreUser" id="score-mouse-15s">-</div>
+                    </div>
+                </div>
+
+                <button class="HSmodeButtonInfo">Keyboard</button>
+                
+                <div class="KotakGridScoreInfo">
+                    <div class="HSDisplayInfo">
+                        <div class="ScoreLabel">5 Second</div>
+                        <div class="ScoreUser" id="score-keyboard-5s">-</div>
+                    </div>
+                    <div class="HSDisplayInfo">
+                        <div class="ScoreLabel">10 Second</div>
+                        <div class="ScoreUser" id="score-keyboard-10s">-</div>
+                    </div>
+                    <div class="HSDisplayInfo">
+                        <div class="ScoreLabel">15 Second</div>
+                        <div class="ScoreUser" id="score-keyboard-15s">-</div>
+                    </div>
+                </div>
+                
+                <div class="ActionButtons">
+                    <button class="FollowButton" id="followButton">Follow</button>
+                    <button class="ChatButton" id="chatButton">Chat</button>
+                </div>
+            </div>
+            
+            <div class="DisplayChat" id="chatMessages">
+                <div class="ChatInput">
+                    <input type="text" id="messageInput" placeholder="Type a message" >
+                    <button id="sendMessageBtn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="BackGroundBlurDisplayDeleteChat" style="display:none;">
+    <div class="KotakUtamaDisplayDelChat">
+        <p class="InfoConfirmDeleteChat">Are You Sure To Delete This Chat?</p>
+        <div class="ContBttnDeleteConfrimChat">
+            <button class="tmblAcceptC">Yes</button>
+            <button class="tmblUnAcceptC">No</button>
+        </div>
+    </div>
+</div>
+
+<script src="/js/Friend.js"></script>

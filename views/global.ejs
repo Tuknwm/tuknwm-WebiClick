@@ -1,0 +1,56 @@
+<%- include('partials/header') %>
+
+<div class="KotakUtamaGlobal">
+    <div class="JudulTextGlobal">
+        <h1 class="TextGlobalIchat">Public Chat</h1>
+    </div>
+
+    <div class="main">
+        <div class="name hidden">
+            <span><i class="far fa-user"></i></span>
+            <input type="text" id="name-input" class="name-input" value="<%= session.user.username %>" readonly />
+        </div>
+
+        <ul class="message-container" id="message-container"></ul>
+
+        <form class="KotakMessageGlobal" id="message-form">
+            <input type="text" name="message" id="message-input" class="InputChatGlobal" placeholder="Type a message" />
+            <div class="v-divider"></div>
+            <button type="submit" class="send-button">
+                <i class="fa-solid fa-paper-plane" style="color: #292929;"></i>
+            </button>
+        </form>
+    </div>
+</div>
+
+<script>
+const messageContainer = document.getElementById('message-container');
+const messageForm = document.getElementById('message-form');
+const messageInput = document.getElementById('message-input');
+const myName = document.getElementById('name-input').value;
+
+const dummyMessages = [
+    { name: 'Kaming', text: 'Halo semua!', time: '09:00' },
+    { name: 'Charless', text: 'Halo! ada yang mau challenge?', time: '09:01' },
+    { name: 'JoeNick', text: 'Ane siap wak 🔥', time: '09:02' },
+];
+
+function addMessage(name, text, time) {
+    const li = document.createElement('li');
+    li.className = `message-${name === myName ? 'right' : 'left'}`;
+    li.innerHTML = `<p class="message">${text}<span>${name} ● ${time}</span></p>`;
+    messageContainer.appendChild(li);
+    messageContainer.scrollTop = messageContainer.scrollHeight;
+}
+
+dummyMessages.forEach(m => addMessage(m.name, m.text, m.time));
+
+messageForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const text = messageInput.value.trim();
+    if (!text) return;
+    const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    addMessage(myName, text, time);
+    messageInput.value = '';
+});
+</script>
