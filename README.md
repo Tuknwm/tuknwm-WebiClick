@@ -1,6 +1,6 @@
 # iClick - Click Speed Test Game
 
-> ⚠️ **Catatan:** Ini adalah project lama. Tampilan UI merupakan hasil pertama kali kami belajar membuat website, sehingga desain masih sangat sederhana dan jauh dari sempurna. Project ini kami simpan sebagai dokumentasi perjalanan belajar kami.
+> ⚠️ **Catatan:** Ini adalah project lama. Tampilan UI merupakan pertama kali membuat website, sehingga desain masih sangat sederhana dan jauh dari sempurna. Ini hasil clone dan terdapat penyesuaian.
 
 ## Deskripsi
 
